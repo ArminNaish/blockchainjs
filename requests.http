@@ -1,0 +1,14 @@
+GET http://localhost:5000/blockchain
+
+###
+PUT http://localhost:5000/blockchain/mine
+
+###
+POST http://localhost:5000/blockchain/transactions
+Content-Type: application/json
+
+{
+    "sender": "a",
+    "recipient": "b",
+    "amount": 100
+}
